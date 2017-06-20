@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-firefox 47版本後需要下載第3方webdriver 'geckodriver'，並放到firefox資料夾中
+Selenium 3 版本需要下載第3方webdriver 'geckodriver'，並放到firefox資料夾中
 之後再將該路徑添加到環境變數path中
 參考網址:https://www.zhihu.com/question/49568096
 '''
