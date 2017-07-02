@@ -13,4 +13,3 @@ print("url of current page is %s" %(driver.current_url))
 
 sleep(2)
 driver.quit()
-
