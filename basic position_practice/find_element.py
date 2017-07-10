@@ -27,15 +27,15 @@ for input in inputs:
 sleep(1)
 
 #把頁面上第2個checkbox的勾給拿掉
-
+print(type(driver.find_elements_by_css_selector('input[id=c2]')))
+driver.find_elements_by_css_selector('input[id=c2]').pop().click()
+'''
 #使用pop 方法來將List中的元素移除並回傳，如不使用則不能使用點擊。
 #原因是因為driver.find_elements_by_css_selector所獲取的值為list
-print(type(driver.find_elements_by_css_selector('input[id=c2]')))
-#driver.find_elements_by_css_selector('input[id=c2]').pop().click()
-
+也可使用之前的for方法，把值取出來
 unchecks = driver.find_elements_by_css_selector('input[id=c2]')
 for uncheck in unchecks:
     uncheck.click()
-
+'''
 sleep(1)
 driver.quit()
